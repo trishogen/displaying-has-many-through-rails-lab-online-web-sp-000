@@ -1,5 +1,5 @@
 <p>
   Appointment date and time:<%= @appointment.appointment_datetime %> </br>
   Patient: <%= @appointment.patient %> </br>
-  Doctor: <%= @appointment.doctor %>
+  Doctor: <%=link_to @appointment.doctor, doctor_path(@appointment.doctor) %>
 </p>
