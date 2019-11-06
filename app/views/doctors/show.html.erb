@@ -1,4 +1,4 @@
 <h1> Appointments: </h1>
-<% @doctor.appointments do |a| %>
+<% @doctor.appointments.each do |a| %>
   <%= a.appointment_datetime.strftime("%B %e, %Y at %H:%M") %> </br>
 <% end %>
